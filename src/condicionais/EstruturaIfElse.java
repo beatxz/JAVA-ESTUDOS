@@ -1,3 +1,5 @@
+package condicionais;
+
 public class EstruturaIfElse {
     public static void main(String[] args) {
 

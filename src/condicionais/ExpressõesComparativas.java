@@ -1,3 +1,5 @@
+package condicionais;
+
 public class ExpressõesComparativas {
     public static void main(String[] args) {
         int pao = 10;

@@ -1,3 +1,5 @@
+package repetição;
+
 import java.util.Scanner;
 
 public class EX0013DOWHILE {

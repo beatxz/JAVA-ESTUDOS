@@ -1,3 +1,5 @@
+package basico;
+
 import java.util.Scanner;
 
 public class EX007CASTING {
@@ -11,7 +13,7 @@ public class EX007CASTING {
         String nome = leitor.nextLine();
         System.out.println("---------------");
 
-        System.out.println("Olá " +nome+ " seja bem vindo");
+        System.out.println("Olá" +nome+ " seja bem vindo");
         System.out.println("---------------");
         System.out.println("Digite seu salário : ");
         double salario = leitor.nextDouble();

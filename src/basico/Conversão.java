@@ -1,3 +1,5 @@
+package basico;
+
 public class Conversão {
     public static void main(String[] args) {
         int numero = 10;

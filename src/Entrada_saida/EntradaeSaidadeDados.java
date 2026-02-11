@@ -1,3 +1,5 @@
+package Entrada_saida;
+
 import java.util.Scanner;
 
 public class EntradaeSaidadeDados {
