@@ -1,4 +1,4 @@
-package repetição;
+package repeticao;
 
 import java.util.Scanner;
 
@@ -22,7 +22,7 @@ public class EX0011estruturaFOR {
 
             if (idade < 18) {
                 menores++;
-            } else {
+             } else {
                 maiores++;
             }
 

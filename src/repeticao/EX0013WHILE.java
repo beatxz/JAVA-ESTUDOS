@@ -1,4 +1,4 @@
-package repetição;
+package repeticao;
 
 public class EX0013WHILE {
     public static void main(String[] args) {
