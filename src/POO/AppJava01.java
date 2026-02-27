@@ -1,6 +1,6 @@
 package POO;
 
-public class AppJava {
+public class AppJava01 {
     public static void main(String[] args) {
        // Iphone 12, tela 6.1" , 256gb
        //Galaxy Note 20 Ultra,tela 6.9" , 256gb
