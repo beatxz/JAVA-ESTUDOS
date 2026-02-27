@@ -1,4 +1,4 @@
-package condicionais;
+package Condicionais;
 
 public class ExpressõesComparativas {
     public static void main(String[] args) {
