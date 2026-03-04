@@ -8,7 +8,9 @@ public class AppJava02 {
         heroi.forca = 9;
 
         heroi.mostrarStatus();
-        heroi.atacar("Loky");
+        heroi.atacar("Loky,","Golpe duplo");
+
+        System.out.println(heroi.calcularDano());
 
     }
 }
