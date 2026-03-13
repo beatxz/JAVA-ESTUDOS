@@ -8,7 +8,8 @@ public class DataLoaderTest01 {
         fileLoader.load();
 
         databaseLoader.remove();
-
+        databaseLoader.checkPermission();
+        fileLoader.checkPermission();
     }
 }
 
