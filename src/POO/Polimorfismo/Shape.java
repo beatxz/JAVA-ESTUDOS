@@ -1,7 +1,8 @@
 package POO.Polimorfismo;
 
-public class Shape extends Calculator {
+public class Shape  {
     public void shape(){
+        System.out.println("Drawing shape");
 
     }
 }
