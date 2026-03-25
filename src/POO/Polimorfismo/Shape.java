@@ -1,8 +1,8 @@
 package POO.Polimorfismo;
 
 public class Shape  {
-    public void shape(){
-        System.out.println("Drawing shape");
+    public void draw(){
+        System.out.println("Drawing draw");
 
     }
 }
