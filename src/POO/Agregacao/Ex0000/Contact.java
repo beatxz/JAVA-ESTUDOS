@@ -1,4 +1,4 @@
-package POO.Agregacao.Telephone;
+package POO.Agregacao.Ex0000;
 
 public class Contact {
     private String name;

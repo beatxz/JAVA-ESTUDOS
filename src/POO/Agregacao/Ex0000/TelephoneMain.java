@@ -1,4 +1,4 @@
-package POO.Agregacao.Telephone;
+package POO.Agregacao.Ex0000;
 
 public class TelephoneMain {
     public static void main(String[]args){
