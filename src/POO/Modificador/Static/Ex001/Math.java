@@ -1,4 +1,4 @@
-package POO.Modificador.Static;
+package POO.Modificador.Static.Ex001;
 
 public class Math {
     public static int add(int numberA, int numberB) {

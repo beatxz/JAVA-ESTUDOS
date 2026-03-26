@@ -1,4 +1,4 @@
-package POO.Modificador.Static;
+package POO.Modificador.Static.Ex001;
 
 public class MathMain {
     public static void main(String[] args) {
