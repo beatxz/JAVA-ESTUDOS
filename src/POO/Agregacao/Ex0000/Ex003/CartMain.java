@@ -13,6 +13,12 @@ public class CartMain {
             System.out.println(p);
         }
         System.out.println("The total value of the cart is: $"+cart.totalCart());
+        Product result = cart.searchProduct("Mouse");
+        if(result != null){
+            System.out.println(result);
+        }else{
+            System.out.println("Product not found");
+        }
 
     }
 }

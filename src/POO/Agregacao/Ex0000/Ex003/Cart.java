@@ -18,4 +18,12 @@ public class Cart {
     public ArrayList<Product> getProducts(){
         return products;
     }
+    public Product searchProduct(String name) {
+        for(Product product : products){
+            if(product.getName().equals(name)){
+                return product;
+            }
+        }
+        return null;
+    }
 }
