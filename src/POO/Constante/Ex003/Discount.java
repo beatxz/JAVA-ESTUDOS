@@ -11,8 +11,13 @@ public class Discount {
     public static double applyTax(double value){
         return value+(value*TAX);
     }
-    public static double applyShipping(double value){
-        return value+SHIPPING;
+    public static double applyShipping(double value) {
+        if (value >= 200) {
+            return value;
+        } else {
+            return value + SHIPPING;
+        }
+
     }
 
 }

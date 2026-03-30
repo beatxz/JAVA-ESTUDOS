@@ -13,6 +13,7 @@ public class DiscountMain {
         double valueWithTax = Discount.applyTax(valueWithDiscount);
         double valueWithShipping = Discount.applyShipping(valueWithTax);
 
+
         System.out.printf("Value with discount: $%.2f%n",valueWithDiscount);
         System.out.printf("Value including tax: $%.2f%n",valueWithTax);
         System.out.printf("Value With Shipping: $%.2f%n",valueWithShipping);
