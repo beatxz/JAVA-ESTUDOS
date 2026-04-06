@@ -13,17 +13,18 @@ public class While {
                 System.out.println("Enter a number: ");
                 number = scanner.nextInt();
 
+                if (number == 0) {
+                    System.out.println(" Closing program... ");
+                    break;
+                }
                 int result = 100 / number;
                 System.out.println("Result: 100/" + number + " = " + result);
 
             } catch (InputMismatchException error) {
                 System.out.println("Incorrect input");
                 scanner.nextLine();
-
-            } catch (ArithmeticException error) {
-                System.out.println("Cannot divide by zero. Closing program...");
-                number = 0;
             }
         }
+        scanner.close();
     }
 }
