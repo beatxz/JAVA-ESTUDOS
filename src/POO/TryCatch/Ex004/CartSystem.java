@@ -9,9 +9,6 @@ public class CartSystem {
     public void addProduct(Double product){
         products.add(product);
     }
-    public ArrayList<Double> getproducts(){
-        return products;
-    }
     public double totalCart(){
         double total = 0;
         for(Double d : products){
