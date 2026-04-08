@@ -7,28 +7,36 @@ public class ShoppingCartSystem {
         CartSystem cart = new CartSystem();
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("---------MENU---------\n"
-                + "1. Add Product\n"
-                + "2. Show total\n"
-                + "3. Apply discount\n"
-                + "0. Exit\n"
-                + "----------------\n"
-                + "choose an option ");
+
         while (true) {
             try {
+                System.out.println("---------MENU---------");
+                System.out.println("1. Add Product");
+                System.out.println("2. Show total");
+                System.out.println("3. Show products");
+                System.out.println("4. Apply discount");
+                System.out.println("0. Exit");
+                System.out.println("----------------");
                 System.out.println("Choice : ");
                 int choice = scanner.nextInt();
                 switch (choice) {
                     case 1:
-                        System.out.println("Enter price: ");
+                        System.out.println("Product name: ");
+                        String name =  scanner.next();
+                        System.out.println("Product price: ");
                         double price = scanner.nextDouble();
-                        cart.addProduct(price);
+                        Product product = new Product(name, price);
+                        cart.addProduct(product);
+                        System.out.println("Product added successfully.");
                         break;
                     case 2:
                         System.out.println("The total value is: $" + cart.totalCart());
                         break;
                     case 3:
-                        cart.applyDiscount();
+                        cart.showProducts();
+                        break;
+                    case 4:
+                        System.out.println("the total value with discount is: $"+cart.applyDiscount());
                         break;
                     case 0:
                         System.out.println("Thank you for using this program...");

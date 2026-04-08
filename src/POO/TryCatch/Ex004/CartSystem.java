@@ -1,27 +1,34 @@
 package POO.TryCatch.Ex004;
-
 import java.util.ArrayList;
 
 public class CartSystem {
-    private ArrayList<Double>products = new ArrayList<>();
+    private ArrayList<Product>products = new ArrayList<Product>();
 
 
-    public void addProduct(Double product){
+    public void addProduct(Product product){
         products.add(product);
     }
     public double totalCart(){
         double total = 0;
-        for(Double d : products){
-            total += d;
+        for(Product p : products){
+            total += p.getPrice();
         }
         return total;
     }
-    public void applyDiscount(){
-        if (totalCart()>=200){
-            double carDiscount =totalCart()-(totalCart()*0.1);
-            System.out.println("the total value with discount is: $"+carDiscount);
-        }else{
-            System.out.println("Unfortunately, the discount does not apply.");
+
+    public void showProducts(){
+        for(Product p : products){
+            System.out.println(p);
+        }
+    }
+    public double applyDiscount(){
+        double total = totalCart();
+
+        if (total >= 500){
+            return total - (total * 0.1);
+        } else {
+            return total;
         }
     }
 }
+
