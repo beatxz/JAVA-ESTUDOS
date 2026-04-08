@@ -36,9 +36,9 @@ public class MenuSystem{
                     double shipping = 15;
                     if (amountShipping < 200) {
                         shipping =  amountShipping+shipping;
-                        System.out.println("Result shipping: $" + amountShipping);
+                        System.out.println("Result shipping: $" + shipping);
                     } else {
-                        System.out.println("Free shipping $" + shipping);
+                        System.out.println("Free shipping: $"+amountShipping);
                     }
                     break;
                 case 0:
