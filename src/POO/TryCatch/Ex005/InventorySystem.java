@@ -50,9 +50,13 @@ public class InventorySystem {
                         }
                         break;
                     case 5:
-                        System.out.println("Enter the product name: ");
-                        inventory.removeProductByName(scanner.next());
-                        System.out.println("Product removed successfully");
+                        Products removed = inventory.removeProductByName(scanner.next());
+
+                        if(removed != null){
+                            System.out.println("Product removed successfully");
+                        } else {
+                            System.out.println("Product not found");
+                        }
                         break;
                     case 0:
                         System.out.println("Thank you for using this program...");

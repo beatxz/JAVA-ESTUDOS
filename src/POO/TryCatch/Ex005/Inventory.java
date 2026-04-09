@@ -33,6 +33,7 @@ public class Inventory {
         for(Products p : products){
             if(p.getName().equalsIgnoreCase(name)){
                 products.remove(p);
+                return p;
             }
         }
         return null;
