@@ -49,7 +49,7 @@ public class SearchProductSystem {
                         }
                         break;
                     case 0:
-                        System.out.println("Thank you for using this program");
+                        System.out.println("Thank you for using this program...");
                         System.exit(0);
 
                         default:
