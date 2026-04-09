@@ -1,4 +1,4 @@
-package POO.Modificador;
+package POO.Modificador.Static.Ex003;
 
 import java.util.Random;
 

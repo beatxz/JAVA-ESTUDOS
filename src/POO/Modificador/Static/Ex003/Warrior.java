@@ -1,6 +1,6 @@
-package POO.Modificador;
+package POO.Modificador.Static.Ex003;
 
-public class Warrior extends Character{
+public class Warrior extends Character {
     @Override
     public void attack() {
         int dataValue = this.rollDice();
