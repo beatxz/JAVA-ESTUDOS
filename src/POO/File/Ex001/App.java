@@ -1,5 +1,14 @@
 package POO.File.Ex001;
 
 public class App {
-    ///home/bea/Área de Trabalho/java/novo-project/src/POO/File/Ex001/UserTxt
+    public static void main(String[] args) {
+
+        String filePath = "/home/bea/.../UserTxt";
+
+        FileReaderUtil file = new FileReaderUtil();
+
+        String result = file.read(filePath);
+
+        System.out.println(result);
+    }
 }
