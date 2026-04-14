@@ -15,5 +15,8 @@ public class CalculateRate {
         System.out.println("Tomato: "+tomato.getName());
         System.out.println("Price: "+tomato.getPrice());
         System.out.println("Tax: "+tax);
+
+
     }
+
 }
