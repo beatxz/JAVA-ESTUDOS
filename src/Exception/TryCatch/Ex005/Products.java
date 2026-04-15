@@ -1,4 +1,4 @@
-package POO.TryCatch.Ex005;
+package Exception.TryCatch.Ex005;
 
 public class Products {
     private String name;

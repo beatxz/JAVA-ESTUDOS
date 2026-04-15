@@ -1,4 +1,4 @@
-package POO.TryCatch.Ex006;
+package Exception.TryCatch.Ex006;
 
 import java.util.ArrayList;
 

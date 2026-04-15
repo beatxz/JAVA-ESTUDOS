@@ -1,4 +1,4 @@
-package POO.TryCatch.Ex005;
+package Exception.TryCatch.Ex005;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

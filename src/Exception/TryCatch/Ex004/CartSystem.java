@@ -1,4 +1,4 @@
-package POO.TryCatch.Ex004;
+package Exception.TryCatch.Ex004;
 import java.util.ArrayList;
 
 public class CartSystem {
