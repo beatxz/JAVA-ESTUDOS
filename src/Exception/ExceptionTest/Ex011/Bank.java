@@ -4,54 +4,77 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Bank {
-    public static void main(String[]args){
-        try(Scanner scanner = new Scanner(System.in)){
+    public static void main(String[] args) {
+
+        try (Scanner scanner = new Scanner(System.in)) {
 
             double balance = 100;
 
-
-            while(true){
-                try{
+            while (true) {
+                try {
                     System.out.println("-----------------");
                     System.out.println("MENU");
-                    System.out.println("1- Withdraw");
-                    System.out.println("2- Exit");
+                    System.out.println("1 - Withdraw");
+                    System.out.println("2 - Deposit");
+                    System.out.println("3 - Show Balance");
+                    System.out.println("0 - Exit");
                     System.out.println("-----------------");
-                    System.out.println("Enter Your choice: ");
+                    System.out.print("Enter your choice: ");
+
                     int choice = scanner.nextInt();
 
-                    switch (choice){
+                    switch (choice) {
+
                         case 1:
-                            System.out.println("Enter amount: ");
+                            System.out.print("Enter amount: ");
                             double amount = scanner.nextDouble();
-                            if(amount>balance){
-                                throw new IllegalArgumentException("insufficient balance,try again");
+
+                            if (amount <= 0) {
+                                throw new IllegalArgumentException("Invalid value");
                             }
-                            if(amount<=0){
-                                throw new IllegalArgumentException("invalid value,try again");
+
+                            if (amount > balance) {
+                                throw new IllegalArgumentException("Insufficient balance");
                             }
 
                             balance -= amount;
 
                             System.out.println("Withdraw successful");
-                            System.out.println("Balance: "+balance);
                             break;
 
                         case 2:
-                            System.out.println("Thank you for using this program...");
-                            System.exit(0);
+                            System.out.print("Enter amount: ");
+                            double deposit = scanner.nextDouble();
+
+                            if (deposit <= 0) {
+                                throw new IllegalArgumentException("Invalid value");
+                            }
+
+                            balance += deposit;
+
+                            System.out.println("Deposit successful");
                             break;
+
+                        case 3:
+                            System.out.println("Balance: " + balance);
+                            break;
+
+                        case 0:
+                            System.out.println("Thank you for using this program...");
+                            return;
+
                         default:
                             System.out.println("Invalid choice");
                     }
 
-                }catch(InputMismatchException e){
-                    System.out.println("invalid entry");
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input");
                     scanner.nextLine();
+
+                } catch (IllegalArgumentException e) {
+                    System.out.println(e.getMessage());
                 }
             }
-        }catch(IllegalArgumentException e) {
-            System.out.println(e.getMessage());
         }
     }
 }
