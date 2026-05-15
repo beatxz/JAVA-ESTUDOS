@@ -13,6 +13,5 @@ public class Regex06 {
         while (matcher.find()) {
             System.out.println(matcher.start() + " " + matcher.group());
         }
-
     }
 }
